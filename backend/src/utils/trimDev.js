@@ -1,10 +1,7 @@
-const axios = require('axios');
 const Dev = require('../models/Dev');
 
 module.exports = function trimDev(dev) {
   let devUpdate = {};
-
-  console.log(dev)
 
   if (dev.name) devUpdate.name = dev.name.trim();
   if (dev.bio) devUpdate.bio = dev.bio.trim();
