@@ -47,7 +47,7 @@ function App() {
       <main>
         <ul>
           {devs.map(dev => (
-            <DevItem onDelete={handleDeleteDev} key={dev.github_username} dev={dev} />
+            <DevItem onDelete={handleDeleteDev} key={dev._id} dev={dev} />
           ))}
         </ul>
       </main>
